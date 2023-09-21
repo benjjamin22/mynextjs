@@ -7,9 +7,11 @@
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     background-color: #dcdcdc;
+    color: black;
 }
 
 .userprofile {
+    color: black;
     background-color: #dcdcdc;
     width: 25.5rem;
     max-width: 30rem;
@@ -22,18 +24,22 @@
 
 .profileinfoo h2 {
     margin: -3px;
+    color: black;
 }
 
 .profileinfoo h1 {
     margin: -3px;
+    color: black;
 }
 
 .profileinfooo h1 {
     margin: -1px;
+    color: black;
 }
 
 .profileinfooo h3 {
     margin: -1px;
+    color: black;
 }
 
 .profiletop {
@@ -47,6 +53,7 @@
 .flecy {
     margin-top: -25px;
     display: flex;
+    color: black;
 }
 
 .bg h9 {
@@ -57,6 +64,7 @@
 .status {
     width: 45%;
     margin: 0 1px;
+    color: black;
 }
 
 .status h1 {
@@ -64,11 +72,13 @@
     margin-top: -5px;
     text-align: center;
     padding: 0 1rem;
+    color: black;
 }
 
 .bg {
     width: 25%;
     margin: 0 1px;
+    color: black;
 }
 
 .col {
@@ -82,6 +92,7 @@
     margin-bottom: 10px;
     line-height: .5rem;
     text-align: center;
+    color: black;
 }
 
 .col h4 {
@@ -98,11 +109,13 @@
     margin-top: -5px;
     text-align: center;
     padding: 0 1.5rem;
+    color: black;
 }
 
 .school .profileinfo {
     flex-direction: column;
     margin: -11px 0px;
+    color: black;
 }
 
 .sex {
@@ -115,6 +128,7 @@
     margin-top: -5px;
     text-align: center;
     padding: 0 1.5rem;
+    color: black;
 }
 
 .lga h1 {
@@ -122,6 +136,7 @@
     margin-top: -8px;
     text-align: center;
     padding: 0 0rem;
+    color: black;
 }
 
 .lgacol {
@@ -132,6 +147,7 @@
     margin: -1px;
     font-size: 12px;
     text-align: center;
+    color: black;
 }
 
 .lgacol h3 {
@@ -145,12 +161,12 @@
     font-size: 12px;
     margin: 0px;
     text-align: center;
+    color: black;
 }
 
 .bottom {
     display: flex;
     margin: -9px 0px;
-    ;
     justify-content: center;
 }
 
@@ -166,6 +182,7 @@
 .profiletop .profileinfo {
     margin-top: 0rem;
     color: rgb(235, 223, 223);
+    color: black;
 }
 
 .profilebottom {
