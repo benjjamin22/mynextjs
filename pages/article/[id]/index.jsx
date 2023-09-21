@@ -7,6 +7,7 @@ const article = ({ article }) => {
 
   return (
     <>
+    <div className={artiii.body}>
       <div className={artiii.userprofile}>
       <div className={artiii.profiletop}>
                 <img className={artiii.img} src={article.picturepath}alt="picturepath"/>
@@ -89,7 +90,7 @@ const article = ({ article }) => {
                         </div>
                     </div>       
                 </div>
-              
+                </div>
     </>
   )
 }
