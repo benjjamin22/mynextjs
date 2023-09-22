@@ -71,21 +71,21 @@ const article = ({ article }) => {
                             <div className={artiii.contact}>
                                 <h1>CONTACT:</h1>
                                 <div className={artiii.profileinfo}>
-                                    <Link href="Tel:{article.inparentno}">
+                                    <>
                                     <div className={artiii.p1}>
                                             <p2>{article.inparentno}</p2>
                                         </div>
-                                    </Link>                   
+                                    </>                   
                                 </div>
                             </div>
                             <div className={artiii.contact}>
                                 <h1>EMERGENCY CONTACT:</h1>
                                 <div className={artiii.profileinfo}>
-                                    <Link href="Tel:${user.inparentno2}">
+                                    <>
                                     <div className={artiii.p2}>
                                             <p2>{article.inparentno2}</p2>
                                         </div>
-                                    </Link>                   
+                                    </>                   
                                 </div>                           
                             </div>
                         </div>
