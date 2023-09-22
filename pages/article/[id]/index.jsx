@@ -1,4 +1,5 @@
 import artiii from '../../../styles/Article.module.css'
+import Link from 'next/link'
 
 
 const article = ({ article }) => {
@@ -70,21 +71,21 @@ const article = ({ article }) => {
                             <div className={artiii.contact}>
                                 <h1>CONTACT:</h1>
                                 <div className={artiii.profileinfo}>
-                                    <a href="Tel:{article.inparentno}">
+                                    <Link href="Tel:{article.inparentno}">
                                     <div className={artiii.p1}>
                                             <p2>{article.inparentno}</p2>
                                         </div>
-                                    </a>                   
+                                    </Link>                   
                                 </div>
                             </div>
                             <div className={artiii.contact}>
                                 <h1>EMERGENCY CONTACT:</h1>
                                 <div className={artiii.profileinfo}>
-                                    <a href="Tel:${user.inparentno2}">
+                                    <Link href="Tel:${user.inparentno2}">
                                     <div className={artiii.p2}>
                                             <p2>{article.inparentno2}</p2>
                                         </div>
-                                    </a>                   
+                                    </Link>                   
                                 </div>                           
                             </div>
                         </div>
@@ -96,7 +97,7 @@ const article = ({ article }) => {
 }
 
 export const getStaticProps = async (context) => {
-  const res = await fetch(`https://worried-gold-goldfish.cyclic.cloud/api/products/${context.params.id}` )
+  const res = await fetch(`https://erin-inquisitive-hare.cyclic.cloud/api/products/${context.params.id}` )
 
   const article = await res.json()
 
@@ -108,7 +109,7 @@ export const getStaticProps = async (context) => {
 }
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`https://worried-gold-goldfish.cyclic.cloud/api/products`)
+  const res = await fetch(`https://erin-inquisitive-hare.cyclic.cloud/api/products`)
 
   const articles = await res.json()
 
