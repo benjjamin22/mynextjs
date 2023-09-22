@@ -36,7 +36,7 @@ const article = ({ article }) => {
                     <div className={artiii.bg}>
                                 <h1 >B/G</h1>
                                 <div className={artiii.profileinfo}>
-                                <h9 >{article.bloodgroup}</h9>
+                                <h1 >{article.bloodgroup}</h1>
                                 </div>
                             </div>
                             <div className={artiii.status}>
@@ -52,7 +52,7 @@ const article = ({ article }) => {
                             <div className={artiii.sex}>
                                 <h1 >SEX</h1>
                                 <div className={artiii.profileinfo}>
-                                <h9 >{article.sex}</h9>
+                                <h1 >{article.sex}</h1>
                                 </div>
                             </div>
                         </div>
