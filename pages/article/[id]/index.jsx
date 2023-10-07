@@ -96,7 +96,7 @@ const article = ({ article }) => {
   )
 }
 
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
   const res = await fetch(`https://erin-inquisitive-hare.cyclic.cloud/api/products/${context.params.id}` )
 
   const article = await res.json()
@@ -105,20 +105,6 @@ export const getStaticProps = async (context) => {
     props: {
       article,
     },
-  }
-}
-
-export const getStaticPaths = async () => {
-  const res = await fetch(`https://erin-inquisitive-hare.cyclic.cloud/api/products`)
-
-  const articles = await res.json()
-
-  const ids = articles.map((article) => article.id)
- const paths = ids.map((id) => ({ params: { id: id.toString() } }))
-
-  return {
-    paths,
-    fallback: false,
   }
 }
 
