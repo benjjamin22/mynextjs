@@ -15,7 +15,7 @@ const article = ({ article }) => {
                 <div className={artiii.profileinfo}>
                 <div className={artiii.profileinfoo}>
                         <h2 >{article.inName}</h2>  
-                        <h1>--{article.reg}--
+                        <h1>--NIN:{article.reg}--
                         </h1>
                         </div>
                     </div>
@@ -25,8 +25,8 @@ const article = ({ article }) => {
                 <div className={artiii.school}> 
                 <div className={artiii.profileinfo}> 
                 <div className={artiii.profileinfooo}>
-                                <h1>- MYDATABASE -</h1>
-                                 <h3>- GRAPHIC - DATABASE - MEDIA -</h3>
+                                <h1>- RIGHTREALM -</h1>
+                                 <h3>- PRIMARY AND SECONDARY SCHOOL -</h3>
                                  </div>
                             </div>
                         </div>
