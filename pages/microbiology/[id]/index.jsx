@@ -14,7 +14,7 @@ const article = ({ article }) => {
                 <img className={artiii.img} src={article.picturepath}alt="picturepath"/>
                 <div className={artiii.profileinfo}>
                 <div className={artiii.profileinfoo}>
-                        <h2 >{article.Name}{article.Mname}{article.Surname}</h2>  
+                        <h2 >{article.Name}  {article.Mname}  {article.Surname}</h2>  
                         <h1>--NIN:{article.RegNo}--
                         </h1>
                         </div>
@@ -52,7 +52,7 @@ const article = ({ article }) => {
                             <div className={artiii.sex}>
                                 <h1 >SEX</h1>
                                 <div className={artiii.profileinfo}>
-                                <h1 >{article.sex}</h1>
+                                <h1 >{article.Sex}</h1>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +61,7 @@ const article = ({ article }) => {
                         
                         <div className={artiii.profileinfo}> 
                         <div className={artiii.lgacol}>
-                                <h1 >- {article.state} -</h1>
+                                <h1 >- {article.State} -</h1>
                                 <h3>- {article.LocalGovernment} -</h3>
                                 </div>
                                  </div>
