@@ -97,7 +97,7 @@ const article = ({ article }) => {
 }
 
 export const getServerSideProps = async (context) => {
-  const res = await fetch(`https://erin-inquisitive-hare.cyclic.cloud/api/products/${context.params._id}`)
+  const res = await fetch(`https://erin-inquisitive-hare.cyclic.cloud/api/products/${context.params.id}`)
   const article = await res.json()
 
   return {
