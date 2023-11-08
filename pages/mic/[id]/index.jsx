@@ -105,7 +105,7 @@ export const getServerSideProps = async (context) => {
       props: {
         article,
       },
-      fallback:true
+    
     }
   }
   
