@@ -97,15 +97,22 @@ const article = ({ article }) => {
 }
 
 export const getServerSideProps = async (context) => {
+    
     const res = await fetch(`https://erin-inquisitive-hare.cyclic.cloud/api/products/${context.params.id}` )
   
-    const article = await res.json()
+    const article = await res.json();
+    if (article === null){
+        return {
+            fallback:false
+        };
+    }
   
     return {
       props: {
         article,
-      },
-    
+        
+      }
+     
     }
   }
   
