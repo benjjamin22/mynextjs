@@ -103,9 +103,13 @@ export const getServerSideProps = async (context) => {
     const article = await res.json();
     if (article === null){
         return {
-            notfound:true
-        };
-    }
+            props: {
+              fallback:false
+              
+            }
+           
+          }
+        }
   
     return {
       props: {
