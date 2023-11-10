@@ -109,7 +109,7 @@ export const getServerSideProps = async (context) => {
             }
            
           }
-        }
+        } else {
   
     return {
       props: {
@@ -118,6 +118,6 @@ export const getServerSideProps = async (context) => {
       }
      
     }
-  }
+  }}
   
   export default article
