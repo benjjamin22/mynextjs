@@ -95,27 +95,27 @@ const article = ({ article }) => {
     </>
   )
 }
-
 export const getServerSideProps = async (context) => {
-    
-    const res = await fetch(`https://erin-inquisitive-hare.cyclic.cloud/api/products/${context.params.id}` )
-  
-    const article = await res.json();
-    if (article === null){
-        return {
-            
-              fallback:false,
-                         
-          };
+    try {
+  const res = await fetch(`https://erin-inquisitive-hare.cyclic.cloud/api/products/${context.params.id}` )
+
+  const article = await res.json()
+  if (!article) {
+            res.writeHead(404, { 'Content-Type': 'application/json' })
+            res.end(JSON.stringify({ message: 'Detail Not Found' }))
         } else {
-  
-    return {
-      props: {
-        article,
-        
-      }
-     
+
+  return {
+    props: {
+      article,
+      fallback:false
     }
+   
   }}
-  
-  export default article
+}
+catch (error) {
+        console.log(error)
+    }
+}
+
+export default article
