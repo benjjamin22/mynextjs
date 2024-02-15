@@ -2,6 +2,7 @@ import artiii from '../../../styles/Article.module.css'
 import Link from 'next/link'
 
 
+
 const article = ({ article }) => {
   // const router = useRouter()
   // const { id } = router.query

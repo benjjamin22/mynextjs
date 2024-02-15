@@ -51,6 +51,10 @@
 
 .profiletop {
     background-color: rgb(216, 21, 21);
+    background-image: url("/bk1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
     padding: .5rem;
     text-align: center;
     color: white;
