@@ -50,7 +50,6 @@
 }
 
 .profiletop {
-    background-color: rgb(216, 21, 21);
     background-image: url("/bk1.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -59,6 +58,7 @@
     text-align: center;
     color: white;
     border-radius: 0px;
+    z-index: 100%;
 }
 
 .flecy {

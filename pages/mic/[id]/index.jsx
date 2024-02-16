@@ -1,5 +1,6 @@
-import artiii from '../../../styles/Article.module.css'
-import Link from 'next/link'
+import artiii from '../../../styles/Article.module.css';
+import Link from 'next/link';
+import Image from 'next/image';
 
 
 
@@ -11,17 +12,17 @@ const article = ({ article }) => {
     <>
     <div className={artiii.body}>
       <div className={artiii.userprofile}>
-      <div className={artiii.profiletop}>
-                <img className={artiii.img} src={article.picturepath}alt="picturepath"/>
-                <div className={artiii.profileinfo}>
-                <div className={artiii.profileinfoo}>
-                        <h2 >{article.Name}  {article.Mname}  {article.Surname}</h2>  
-                        <h1>--NIN:{article.RegNo}--
-                        </h1>
+            <div className={artiii.profiletop}>
+                <Image src={bk1.jpg}/>
+                    <img className={artiii.img} src={article.picturepath}alt="picturepath"/>
+                    <div className={artiii.profileinfo}>
+                        <div className={artiii.profileinfoo}>
+                            <h2 >{article.Name}  {article.Mname}  {article.Surname}</h2>  
+                            <h1>--NIN:{article.RegNo}--</h1>
                         </div>
                     </div>
                 
-                </div>
+            </div>
                 <div className={artiii.profilebottom}>
                 <div className={artiii.school}> 
                 <div className={artiii.profileinfo}> 
