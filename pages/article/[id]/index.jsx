@@ -24,8 +24,8 @@ const article = ({ article }) => {
                         <div className={artiii.school}>
                             <div className={artiii.profileinfo}> 
                                 <div className={artiii.profileinfooo}>
-                                    <h1>- MYDATABASE -</h1>
-                                    <h3>- INFORMATION TECHNOLOGY -</h3>
+                                    <h1>- RIGHTREALM INTL SCHOOL-</h1>
+                                    <h3>- NURSERY PRIMARY AND SECONDARY -</h3>
                                  </div>
                             </div>
                         </div>
