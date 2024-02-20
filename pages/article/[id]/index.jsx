@@ -14,7 +14,8 @@ const article = ({ article }) => {
                     <img className={artiii.img} src={article.picturepath}alt="picturepath"/>
                     <div className={artiii.profileinfo}>
                         <div className={artiii.profileinfoo}>
-                            <h2 >{article.inName}</h2>  
+                            <h2 >{article.inNamer.Name}</h2>  
+                            <h3 >{article.inNamer.Mname}  {article.inNamer.Surname}</h3> 
                             <h1>--NIN:{article.reg}--
                             </h1>
                         </div>

@@ -29,10 +29,18 @@
 .profileinfoo h2 {
     margin: -3px;
     color: white;
+    font-size: 45px;
+    margin-bottom: -20px;
+}
+
+.profileinfoo h3 {
+    margin: -3px;
+    color: white;
+    font-size: 20px;
 }
 
 .profileinfoo h1 {
-    margin: -3px;
+    margin: -0px;
     color: white;
 }
 
