@@ -9,24 +9,24 @@ const article = ({ article }) => {
   return (
     <>
     <div className={artiii.body}>
-      <div className={artiii.userprofile}>
-      <div className={artiii.profiletop}>
-                <img className={artiii.img} src={article.picturepath}alt="picturepath"/>
-                <div className={artiii.profileinfo}>
-                <div className={artiii.profileinfoo}>
-                        <h2 >{article.inName}</h2>  
-                        <h1>--REG NO:{article.reg}--
-                        </h1>
+        <div className={artiii.userprofile}>
+            <div className={artiii.profiletop}>
+                    <img className={artiii.img} src={article.picturepath}alt="picturepath"/>
+                    <div className={artiii.profileinfo}>
+                        <div className={artiii.profileinfoo}>
+                            <h2 >{article.inNamer.Name}</h2>  
+                            <h3 >{article.inNamer.Mname}    {article.inNamer.Surname}</h3> 
+                            <h1>--NIN:{article.reg}--
+                            </h1>
                         </div>
                     </div>
-                
-                </div>
-                <div className={artiii.profilebottom}>
-                <div className={artiii.school}> 
-                <div className={artiii.profileinfo}> 
-                <div className={artiii.profileinfooo}>
-                                <h1>- IMO STATE UNIVERSITY -</h1>
-                                 <h3>- MICROBIOLOGY STUDENTS ASSOCIATION -</h3>
+            </div>
+                    <div className={artiii.profilebottom}>
+                        <div className={artiii.school}>
+                            <div className={artiii.profileinfo}> 
+                                <div className={artiii.profileinfooo}>
+                                <h1>- MYDATABASE-</h1>
+                                    <h3>- ADMIN./ENGINEERING DEPT. -</h3>
                                  </div>
                             </div>
                         </div>
