@@ -30,7 +30,18 @@ const article = ({ article }) => {
                                  </div>
                             </div>
                         </div>
+                         <div className={artiii.lga}>
+                        <h1>FACULTY/DEPARTMENT</h1>
+                        
+                        <   div className={artiii.profileinfo}> 
+                                <div className={artiii.lgacol}>
+                                    <h1 >- {article.Faculty} -</h1>
+                                    <h3>- {article.Department} -</h3>
+                                </div>
+                                 </div>
+                            </div>
                     </div>
+                    
                     <div className={artiii.profilebottom}>
                     <div className={artiii.flecy}>
                     <div className={artiii.bg}>
@@ -59,10 +70,10 @@ const article = ({ article }) => {
                         <div className={artiii.lga}>
                         <h1>LGA/STATE OF ORIGIN</h1>
                         
-                        <div className={artiii.profileinfo}> 
-                        <div className={artiii.lgacol}>
-                                <h1 >- {article.state} -</h1>
-                                <h3>- {article.localgovt} -</h3>
+                        <   div className={artiii.profileinfo}> 
+                                <div className={artiii.lgacol}>
+                                    <h1 >- {article.state} -</h1>
+                                    <h3>- {article.localgovt} -</h3>
                                 </div>
                                  </div>
                             </div>
