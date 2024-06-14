@@ -15,7 +15,7 @@ const article = ({ article }) => {
                     <div className={artiii.profileinfo}>
                         <div className={artiii.profileinfoo}>
                             <h2 >{article.inNamer.Name}</h2>  
-                            <h3 >{article.inNamer.Mname}    {article.inNamer.Surname}</h3> 
+                            <h3 >{article.inNamer.Mname}    {article.inNamer.Surname}</h3>
                             <h1>--REG:{article.reg}--
                             </h1>
                         </div>
