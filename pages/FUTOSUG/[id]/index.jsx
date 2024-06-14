@@ -26,7 +26,7 @@ const article = ({ article }) => {
                             <div className={artiii.profileinfo}> 
                                 <div className={artiii.profileinfooo}>
                                     <h1>- STUDENT UNION GOVERNMENT-</h1>
-                                    <h3>- FEDERAL UNIVERSITY OF TECNOLOGY -</h3>
+                                    <h3>- FEDERAL UNIVERSITY OF TECNOLOGY OWERRI-</h3>
                                  </div>
                             </div>
                         </div>
@@ -70,10 +70,10 @@ const article = ({ article }) => {
                         <div className={artiii.lga}>
                         <h1>LGA/STATE OF ORIGIN</h1>
                         
-                        <   div className={artiii.profileinfo}> 
-                                <div className={artiii.lgacol}>
-                                    <h1 >- {article.state} -</h1>
-                                    <h3>- {article.localgovt} -</h3>
+                        <div className={artiii.profileinfo}> 
+                        <div className={artiii.lgacol}>
+                                <h1 >- {article.state} -</h1>
+                                <h3>- {article.localgovt} -</h3>
                                 </div>
                                  </div>
                             </div>
