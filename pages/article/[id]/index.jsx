@@ -25,8 +25,8 @@ const article = ({ article }) => {
                         <div className={artiii.school}>
                             <div className={artiii.profileinfo}> 
                                 <div className={artiii.profileinfooo}>
-                                    <h1>- RIGHTREALM INTL SCHOOL-</h1>
-                                    <h3>- NURSERY PRIMARY AND SECONDARY -</h3>
+                                    <h1>- NATIONAL ASSOCIATION OF-</h1>
+                                    <h3>- MEDICAL LAB. SCI. STUDENTS -</h3>
                                  </div>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ const article = ({ article }) => {
 }
 
 export const getServerSideProps = async (context) => {
-  const res = await fetch(`https://erin-inquisitive-hare.cyclic.cloud/api/products/${context.params.id}` )
+  const res = await fetch(`https://www.mydatabase.com.ng/radical/${context.params.id}` )
 
   const article = await res.json()
 
