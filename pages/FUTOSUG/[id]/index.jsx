@@ -11,7 +11,7 @@ const article = ({ article }) => {
     <div className={artiii.body}>
         <div className={artiii.userprofile}>
             <div className={artiii.profiletop}>
-                    <img className={artiii.img} src={article.po}alt="picturepath"/>
+                    <img className={artiii.img} src={article.picturepath}alt="picturepath"/>
                     <div className={artiii.profileinfo}>
                         <div className={artiii.profileinfoo}>
                             <h2 >{article.Aname.Name}</h2>  
