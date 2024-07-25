@@ -14,9 +14,9 @@ const article = ({ article }) => {
                     <img className={artiii.img} src={article.picturepath}alt="picturepath"/>
                     <div className={artiii.profileinfo}>
                         <div className={artiii.profileinfoo}>
-                            <h2 >{article.inNamer.Name}</h2>  
-                            <h3 >{article.inNamer.Mname}    {article.inNamer.Surname}</h3> 
-                            <h1>--NIN:{article.reg}--
+                            <h2 >{article.Aname.Name}</h2>  
+                            <h3 >{article.Aname.Mname}    {article.Aname.Surname}</h3>
+                            <h1>--REG:{article.RegNo}--
                             </h1>
                         </div>
                     </div>
@@ -25,18 +25,18 @@ const article = ({ article }) => {
                         <div className={artiii.school}>
                             <div className={artiii.profileinfo}> 
                                 <div className={artiii.profileinfooo}>
-                                <h1>- MYDATABASE-</h1>
-                                    <h3>- INFORMATION TECHNOLOGY -</h3>
+                                    <h1>- NIGERIA UNIVERSITIES OF -</h1>
+                                    <h3>-ACCOUNTANCY STUDENTS ASSOCIATION-</h3>
                                  </div>
                             </div>
                         </div>
-                        <div className={artiii.lga}>
-                        <h1>DEPAERTMENT</h1>
+                         <div className={artiii.lga}>
+                        <h1>FACULTY/DEPARTMENT</h1>
                         
-                        <div className={artiii.profileinfo}> 
-                        <div className={artiii.lgacol}>
-                                <h1 >- ADMIN./ENGINEERING -</h1>
-                                <h3>- DEPAERTMENT -</h3>
+                        <   div className={artiii.profileinfo}> 
+                                <div className={artiii.lgacol}>
+                                    <h1 >- BUSSINESS MGT. -</h1>
+                                    <h3>- ACCOUNTANCY -</h3>
                                 </div>
                                  </div>
                             </div>
@@ -47,15 +47,15 @@ const article = ({ article }) => {
                     <div className={artiii.bg}>
                                 <h1 >B/G</h1>
                                 <div className={artiii.profileinfo}>
-                                <h1 >{article.bloodgroup}</h1>
+                                <h1 >{article.Bloodgroup}</h1>
                                 </div>
                             </div>
                             <div className={artiii.status}>
                             <h1 >STATUS/VALIDITY</h1>
                             <div className={artiii.profileinfo}>
                             <div className={artiii.col}>
-                                    <h1>{article.Status}</h1>
-                                    <h4 >- {article.validity} -</h4>
+                                    <h1>STUDENT</h1>
+                                    <h4 >- {article.Validity} -</h4>
                                 </div>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@ const article = ({ article }) => {
                             <div className={artiii.sex}>
                                 <h1 >SEX</h1>
                                 <div className={artiii.profileinfo}>
-                                <h1 >{article.sex}</h1>
+                                <h1 >{article.Sex}</h1>
                                 </div>
                             </div>
                         </div>
@@ -72,8 +72,8 @@ const article = ({ article }) => {
                         
                         <div className={artiii.profileinfo}> 
                         <div className={artiii.lgacol}>
-                                <h1 >- {article.state} -</h1>
-                                <h3>- {article.localgovt} -</h3>
+                                <h1 >- {article.State} -</h1>
+                                <h3>- {article.LocalGovt} -</h3>
                                 </div>
                                  </div>
                             </div>
@@ -84,7 +84,7 @@ const article = ({ article }) => {
                                 <div className={artiii.profileinfo}>
                                     <>
                                     <div className={artiii.p1}>
-                                            <p2>{article.inparentno}</p2>
+                                            <p2>{article.PhoneNo}</p2>
                                         </div>
                                     </>                   
                                 </div>
@@ -94,7 +94,7 @@ const article = ({ article }) => {
                                 <div className={artiii.profileinfo}>
                                     <>
                                     <div className={artiii.p2}>
-                                            <p2>{article.inparentno2}</p2>
+                                            <p2>{article.EmergencyNo}</p2>
                                         </div>
                                     </>                   
                                 </div>                           
@@ -108,7 +108,7 @@ const article = ({ article }) => {
 }
 
 export const getServerSideProps = async (context) => {
-  const res = await fetch(`https://www.mydatabase.com.ng/radical/${context.params.id}` )
+  const res = await fetch(`https://www.mydatabase.com.ng/nuasadb/${context.params.id}` )
 
   const article = await res.json()
 
