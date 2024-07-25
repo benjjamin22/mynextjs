@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+condensed');
 .body {
-    height: 125vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     margin-right: 0px;
@@ -22,7 +22,7 @@
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
     box-sizing: border-box;
-    height: 59rem;
+    height: 52rem;
     width: 105%;
 }
 
