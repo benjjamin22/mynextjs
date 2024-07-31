@@ -25,8 +25,8 @@ const article = ({ article }) => {
                         <div className={artiii.school}>
                             <div className={artiii.profileinfo}> 
                                 <div className={artiii.profileinfooo}>
-                                    <h1>- NATIONAL ASSOCIATION OF-</h1>
-                                    <h3>- MEDICAL LAB. SCI. STUDENTS -</h3>
+                                    <h1>- EBENATOR EKWE SECONDARY-</h1>
+                                    <h3>- SCHOOL, ISU IMO STATE -</h3>
                                  </div>
                             </div>
                         </div>
@@ -43,7 +43,7 @@ const article = ({ article }) => {
                             <h1 >STATUS/VALIDITY</h1>
                             <div className={artiii.profileinfo}>
                             <div className={artiii.col}>
-                                    <h1>{article.Status}</h1>
+                                    <h1>STUDENT</h1>
                                     <h4 >- {article.validity} -</h4>
                                 </div>
                                 </div>
