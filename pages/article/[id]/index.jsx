@@ -30,6 +30,16 @@ const article = ({ article }) => {
                                  </div>
                             </div>
                         </div>
+                        <div className={artiii.lga}>
+                        <h1>DATE OF BIRTH/PRESENT CLASS</h1>
+                        
+                        <div className={artiii.profileinfo}> 
+                        <div className={artiii.lgacol}>
+                                <h1 >- 17TH JULY,2012 -</h1>
+                                <h3>- J.S.S. 2 -</h3>
+                                </div>
+                                 </div>
+                            </div>
                     </div>
                     <div className={artiii.profilebottom}>
                     <div className={artiii.flecy}>
@@ -69,7 +79,7 @@ const article = ({ article }) => {
                         
                             <div className={artiii.bottom}>
                             <div className={artiii.contact}>
-                                <h1>CONTACT:</h1>
+                                <h1>PARENT CONTACT 1:</h1>
                                 <div className={artiii.profileinfo}>
                                     <>
                                     <div className={artiii.p1}>
@@ -79,7 +89,7 @@ const article = ({ article }) => {
                                 </div>
                             </div>
                             <div className={artiii.contact}>
-                                <h1>EMERGENCY CONTACT:</h1>
+                                <h1>PARENT CONTACT 2:</h1>
                                 <div className={artiii.profileinfo}>
                                     <>
                                     <div className={artiii.p2}>
