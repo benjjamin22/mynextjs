@@ -54,14 +54,14 @@ const article = ({ article }) => {
                             <h1 >STATUS/VALIDITY</h1>
                             <div className={artiii.profileinfo}>
                             <div className={artiii.col}>
-                                    <h1>{article.Status}</h1>
-                                    <h4 >- {article.Validity} -</h4>
+                                    <h1>STUDENT</h1>
+                                    <h4 >- 2023-2028 -</h4>
                                 </div>
                                 </div>
                             </div>
 
                             <div className={artiii.sex}>
-                                <h1 >SEX</h1>
+                                <h1 >GENDER</h1>
                                 <div className={artiii.profileinfo}>
                                 <h1 >{article.Sex}</h1>
                                 </div>
