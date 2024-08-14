@@ -32,6 +32,16 @@ const article = ({ article }) => {
                                  </div>
                             </div>
                         </div>
+                        <div className={artiii.lga}>
+                        <h1>FACULTY/DEPARTMENT</h1>
+                        
+                        <   div className={artiii.profileinfo}> 
+                                <div className={artiii.lgacol}>
+                                    <h1 >- SCIENCE -</h1>
+                                    <h3>- MIROBIOLOGY -</h3>
+                                </div>
+                                 </div>
+                            </div>
                     </div>
                     <div className={artiii.profilebottom}>
                     <div className={artiii.flecy}>
