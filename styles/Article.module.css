@@ -40,6 +40,12 @@
     font-size: 20px;
     letter-spacing: 2px;
 }
+.profileinfoo h4 {
+    margin: -3px;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
 
 .profileinfoo h1 {
     margin: -0px;
