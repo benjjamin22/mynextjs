@@ -18,7 +18,7 @@ const article = ({ article }) => {
                     <div className={artiii.profileinfo}>
                         <div className={artiii.profileinfoo}>
                             <h4 >{article.Name}</h4>  
-                            <h1>--NIN:{article.RegNo}--</h1>
+                            <h1>{article.RegNo}--</h1>
                         </div>
                     </div>
                 
