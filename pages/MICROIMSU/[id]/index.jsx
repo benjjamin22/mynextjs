@@ -13,11 +13,11 @@ const article = ({ article }) => {
     <div className={artiii.body}>
       <div className={artiii.userprofile}>
             <div className={artiii.profiletop}>
-                <Image src={bk1.jpg}/>
+                
                     <img className={artiii.img} src={article.picturepath}alt="picturepath"/>
                     <div className={artiii.profileinfo}>
                         <div className={artiii.profileinfoo}>
-                            <h2 >{article.Name}  {article.Mname}  {article.Surname}</h2>  
+                            <h2 >{article.Name}</h2>  
                             <h1>--NIN:{article.RegNo}--</h1>
                         </div>
                     </div>
@@ -28,7 +28,7 @@ const article = ({ article }) => {
                 <div className={artiii.profileinfo}> 
                 <div className={artiii.profileinfooo}>
                                 <h1>- NATIONAL ASSOCIATION OF -</h1>
-                                 <h3>- MICRIOBIOLOGY STUDENTS -</h3>
+                                 <h3>- MICRIOBIOLOGY STUDENTS(IMSU) -</h3>
                                  </div>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ const article = ({ article }) => {
                     <div className={artiii.bg}>
                                 <h1 >B/G</h1>
                                 <div className={artiii.profileinfo}>
-                                <h1 >{article.bloodgroup}</h1>
+                                <h1 >{article.Bloodgroup}</h1>
                                 </div>
                             </div>
                             <div className={artiii.status}>
@@ -46,7 +46,7 @@ const article = ({ article }) => {
                             <div className={artiii.profileinfo}>
                             <div className={artiii.col}>
                                     <h1>{article.Status}</h1>
-                                    <h4 >- {article.validity} -</h4>
+                                    <h4 >- {article.Validity} -</h4>
                                 </div>
                                 </div>
                             </div>
@@ -62,9 +62,9 @@ const article = ({ article }) => {
                         <h1>LGA/STATE OF ORIGIN</h1>
                         
                         <div className={artiii.profileinfo}> 
-                        <div className={artiii.lgacol}>
+                        <div className={artiii.LocalGovt}>
                                 <h1 >- {article.State} -</h1>
-                                <h3>- {article.LocalGovernment} -</h3>
+                                <h3>- {article.LocalGovt} -</h3>
                                 </div>
                                  </div>
                             </div>
@@ -75,7 +75,7 @@ const article = ({ article }) => {
                                 <div className={artiii.profileinfo}>
                                     <>
                                     <div className={artiii.p1}>
-                                            <p2>{article.Phoneno1}</p2>
+                                            <p2>{article.PhoneNo}</p2>
                                         </div>
                                     </>                   
                                 </div>
@@ -85,7 +85,7 @@ const article = ({ article }) => {
                                 <div className={artiii.profileinfo}>
                                     <>
                                     <div className={artiii.p2}>
-                                            <p2>{article.Phoneno2}</p2>
+                                            <p2>{article.EmergencyNo}</p2>
                                         </div>
                                     </>                   
                                 </div>                           
@@ -99,7 +99,7 @@ const article = ({ article }) => {
 }
 export const getServerSideProps = async (context) => {
     try {
-  const res = await fetch(`https://erin-inquisitive-hare.cyclic.cloud/api/products/${context.params.id}` )
+  const res = await fetch(`https://www.mydatabase.com.ng/radical/${context.params.id}` )
 
   const article = await res.json()
   if (!article) {
