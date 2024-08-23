@@ -11,38 +11,38 @@ const article = ({ article }) => {
   return (
     <>
     <div className={artiii.body}>
-      <div className={artiii.userprofile}>
+        <div className={artiii.userprofile}>
             <div className={artiii.profiletop}>
-                
                     <img className={artiii.img} src={article.picturepath}alt="picturepath"/>
                     <div className={artiii.profileinfo}>
                         <div className={artiii.profileinfoo}>
                             <h4 >{article.Name}</h4>  
-                            <h1>{article.RegNo}--</h1>
+                            <h1>--REG:{article.RegNo}--
+                            </h1>
                         </div>
                     </div>
-                
             </div>
-                <div className={artiii.profilebottom}>
-                <div className={artiii.school}> 
-                <div className={artiii.profileinfo}> 
-                <div className={artiii.profileinfooo}>
-                                <h1>- NATIONAL ASSOCIATION OF -</h1>
-                                 <h3>- MICRIOBIOLOGY STUDENTS(IMSU) -</h3>
+                    <div className={artiii.profilebottom}>
+                        <div className={artiii.school}>
+                            <div className={artiii.profileinfo}> 
+                                <div className={artiii.profileinfooo}>
+                                    <h1>- IMO STATE UNIVERSITY-</h1>
+                                    <h3>-MICROBIOLOGY STUDENTS ASSOCIATION-</h3>
                                  </div>
                             </div>
                         </div>
-                        <div className={artiii.lga}>
+                         <div className={artiii.lga}>
                         <h1>FACULTY/DEPARTMENT</h1>
                         
                         <   div className={artiii.profileinfo}> 
                                 <div className={artiii.lgacol}>
                                     <h1 >- SCIENCE -</h1>
-                                    <h3>- MIROBIOLOGY -</h3>
+                                    <h3>- MICROBIOLOGY -</h3>
                                 </div>
                                  </div>
                             </div>
                     </div>
+                    
                     <div className={artiii.profilebottom}>
                     <div className={artiii.flecy}>
                     <div className={artiii.bg}>
@@ -55,7 +55,7 @@ const article = ({ article }) => {
                             <h1 >STATUS/VALIDITY</h1>
                             <div className={artiii.profileinfo}>
                             <div className={artiii.col}>
-                                    <h1>{article.Status}</h1>
+                                    <h1>MEMBER</h1>
                                     <h4 >- {article.Validity} -</h4>
                                 </div>
                                 </div>
@@ -72,7 +72,7 @@ const article = ({ article }) => {
                         <h1>LGA/STATE OF ORIGIN</h1>
                         
                         <div className={artiii.profileinfo}> 
-                        <div className={artiii.LocalGovt}>
+                        <div className={artiii.lgacol}>
                                 <h1 >- {article.State} -</h1>
                                 <h3>- {article.LocalGovt} -</h3>
                                 </div>
