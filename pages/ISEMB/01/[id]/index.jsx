@@ -1,7 +1,5 @@
-import artiii from '../../../styles/Article.module.css';
-import Link from 'next/link';
-import Image from 'next/image';
-
+import artiii from '../../../../styles/Article.module.css'
+import Link from 'next/link'
 
 
 const article = ({ article }) => {
@@ -16,8 +14,9 @@ const article = ({ article }) => {
                     <img className={artiii.img} src={article.picturepath}alt="picturepath"/>
                     <div className={artiii.profileinfo}>
                         <div className={artiii.profileinfoo}>
-                            <h4 >{article.Name}</h4>  
-                            <h1>--REG:{article.RegNo}--
+                            <h2 >{article.Aname.Name}</h2>  
+                            <h3 >{article.Aname.Mname}    {article.Aname.Surname}</h3> 
+                            <h1>--NIN:{article.NIN}--
                             </h1>
                         </div>
                     </div>
@@ -26,23 +25,22 @@ const article = ({ article }) => {
                         <div className={artiii.school}>
                             <div className={artiii.profileinfo}> 
                                 <div className={artiii.profileinfooo}>
-                                    <h1>- IMO STATE UNIVERSITY-</h1>
-                                    <h3>-MICROBIOLOGY STUDENTS ASSOCIATION-</h3>
+                                    <h1>- EBENATOR EKWE SECONDARY-</h1>
+                                    <h3>- SCHOOL, ISU IMO STATE -</h3>
                                  </div>
                             </div>
                         </div>
-                         <div className={artiii.lga}>
-                        <h1>FACULTY/DEPARTMENT</h1>
+                        <div className={artiii.lga}>
+                        <h1>DATE OF BIRTH/PRESENT CLASS</h1>
                         
-                        <   div className={artiii.profileinfo}> 
-                                <div className={artiii.lgacol}>
-                                    <h1 >- SCIENCE -</h1>
-                                    <h3>- MICROBIOLOGY -</h3>
+                        <div className={artiii.profileinfo}> 
+                        <div className={artiii.lgacol}>
+                                <h1 >- {article.DateofBirth} -</h1>
+                                <h3>- {article.Presentclass} -</h3>
                                 </div>
                                  </div>
                             </div>
                     </div>
-                    
                     <div className={artiii.profilebottom}>
                     <div className={artiii.flecy}>
                     <div className={artiii.bg}>
@@ -55,7 +53,7 @@ const article = ({ article }) => {
                             <h1 >STATUS/VALIDITY</h1>
                             <div className={artiii.profileinfo}>
                             <div className={artiii.col}>
-                                    <h1>MEMBER</h1>
+                                    <h1>{article.Status}</h1>
                                     <h4 >- {article.Validity} -</h4>
                                 </div>
                                 </div>
@@ -64,7 +62,7 @@ const article = ({ article }) => {
                             <div className={artiii.sex}>
                                 <h1 >SEX</h1>
                                 <div className={artiii.profileinfo}>
-                                <h1 >{article.Sex}</h1>
+                                <h1 >{article.Gender}</h1>
                                 </div>
                             </div>
                         </div>
@@ -74,28 +72,28 @@ const article = ({ article }) => {
                         <div className={artiii.profileinfo}> 
                         <div className={artiii.lgacol}>
                                 <h1 >- {article.State} -</h1>
-                                <h3>- {article.LocalGovt} -</h3>
+                                <h3>- {article.HometonCommunity} -</h3>
                                 </div>
                                  </div>
                             </div>
                         
                             <div className={artiii.bottom}>
                             <div className={artiii.contact}>
-                                <h1>CONTACT:</h1>
+                                <h1>PARENT CONTACT 1:</h1>
                                 <div className={artiii.profileinfo}>
                                     <>
                                     <div className={artiii.p1}>
-                                            <p2>{article.PhoneNo}</p2>
+                                            <p2>{article.ParentPhoneNo}</p2>
                                         </div>
                                     </>                   
                                 </div>
                             </div>
                             <div className={artiii.contact}>
-                                <h1>EMERGENCY CONTACT:</h1>
+                                <h1>PARENT CONTACT 2:</h1>
                                 <div className={artiii.profileinfo}>
                                     <>
                                     <div className={artiii.p2}>
-                                            <p2>{article.EmergencyNo}</p2>
+                                            <p2>{article.ParentPhoneNo2}</p2>
                                         </div>
                                     </>                   
                                 </div>                           
@@ -107,15 +105,11 @@ const article = ({ article }) => {
     </>
   )
 }
+
 export const getServerSideProps = async (context) => {
-    try {
   const res = await fetch(`https://www.mydatabase.com.ng/radical/${context.params.id}` )
 
   const article = await res.json()
-  if (!article) {
-            res.writeHead(404, { 'Content-Type': 'application/json' })
-            res.end(JSON.stringify({ message: 'Detail Not Found' }))
-        } else {
 
   return {
     props: {
@@ -123,11 +117,7 @@ export const getServerSideProps = async (context) => {
       fallback:false
     }
    
-  }}
-}
-catch (error) {
-        console.log(error)
-    }
+  }
 }
 
 export default article
