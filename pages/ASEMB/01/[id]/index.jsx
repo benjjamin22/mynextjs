@@ -72,7 +72,7 @@ const article = ({ article }) => {
                         <div className={artiii.profileinfo}> 
                         <div className={artiii.lgacol}>
                                 <h1 >- {article.State} -</h1>
-                                <h3>- {article.HometonCommunity} -</h3>
+                                <h3>- {article.HometownCommunity} -</h3>
                                 </div>
                                  </div>
                             </div>
