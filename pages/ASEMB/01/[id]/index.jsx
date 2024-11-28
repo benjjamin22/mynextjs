@@ -107,7 +107,7 @@ const article = ({ article }) => {
 }
 
 export const getServerSideProps = async (context) => {
-  const res = await fetch(`https://mydata-3j6m.vercel.app/${context.params.id}` )
+  const res = await fetch(`https://mydata-3j6m.vercel.app/radical/${context.params.id}` )
 
   const article = await res.json()
 
