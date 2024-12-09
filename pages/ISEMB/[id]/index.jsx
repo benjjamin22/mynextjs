@@ -1,4 +1,4 @@
-import artiii from '../../../../styles/Article.module.css'
+import artiii from '../../../styles/Article.module.css'
 import Link from 'next/link'
 
 
