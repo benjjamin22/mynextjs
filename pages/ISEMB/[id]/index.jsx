@@ -11,7 +11,7 @@ const article = ({ article }) => {
     <div className={artiii.body}>
         <div className={artiii.userprofile}>
             <div className={artiii.profiletop}>
-                    <img className={artiii.img} src={article.picturepath}alt="picturepath"/>
+                    <img className={artiii.img} src={article.client}alt="picturepath"/>
                     <div className={artiii.profileinfo}>
                         <div className={artiii.profileinfoo}>
                             <h2 >{article.Aname.Name}</h2>  
@@ -35,7 +35,7 @@ const article = ({ article }) => {
                         
                         <div className={artiii.profileinfo}> 
                         <div className={artiii.lgacol}>
-                                <h1 >- {article.DateofBirth} -</h1>
+                                <h1 >- {article.Ddateofbirth.Day} {article.Ddateofbirth.Month} {article.Ddateofbirth.Year}-</h1>
                                 <h3>- {article.Presentclass} -</h3>
                                 </div>
                                  </div>
@@ -54,7 +54,7 @@ const article = ({ article }) => {
                             <div className={artiii.profileinfo}>
                             <div className={artiii.col}>
                                     <h1>{article.Status}</h1>
-                                    <h4 >- {article.Validity} -</h4>
+                                    <h4 >- {article.Presentclass} -</h4>
                                 </div>
                                 </div>
                             </div>
@@ -72,7 +72,7 @@ const article = ({ article }) => {
                         <div className={artiii.profileinfo}> 
                         <div className={artiii.lgacol}>
                                 <h1 >- {article.State} -</h1>
-                                <h3>- {article.HometonCommunity} -</h3>
+                                <h3>- {article.HometownCommunity} -</h3>
                                 </div>
                                  </div>
                             </div>
