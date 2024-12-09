@@ -25,8 +25,8 @@ const article = ({ article }) => {
                         <div className={artiii.school}>
                             <div className={artiii.profileinfo}> 
                                 <div className={artiii.profileinfooo}>
-                                    <h1>- EBENATOR EKWE SECONDARY-</h1>
-                                    <h3>- SCHOOL, ISU IMO STATE -</h3>
+                                    <h1>- {article.School}-</h1>
+                                    
                                  </div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ const article = ({ article }) => {
 }
 
 export const getServerSideProps = async (context) => {
-  const res = await fetch(`https://www.mydatabase.com.ng/radical/${context.params.id}` )
+    const res = await fetch(`https://mydata-3j6m.vercel.app/radical/${context.params.id}` )
 
   const article = await res.json()
 
