@@ -109,7 +109,7 @@ const article = ({ article }) => {
 }
 export const getServerSideProps = async (context) => {
     try {
-  const res = await fetch(`https://www.mydatabase.com.ng/radical/${context.params.id}` )
+  const res = await fetch(`https://namsimsu.mydatabase.com.ng/getall/${context.params.id}` )
 
   const article = await res.json()
   if (!article) {
